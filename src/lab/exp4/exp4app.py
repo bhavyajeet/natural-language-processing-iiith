@@ -281,7 +281,7 @@ def quizans():
         arr.append(userans)
         i += 1
     for j in range(i-1):
-        if str(arr[j]) == str(ansarr[j]):
+        if str(arr[j]).strip() == str(ansarr[j]).strip():
             score.append(1)
             n += 1
         else:
@@ -302,3 +302,4 @@ def root9():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
